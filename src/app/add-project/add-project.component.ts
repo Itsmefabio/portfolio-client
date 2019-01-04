@@ -16,6 +16,8 @@ export class AddProjectComponent implements OnInit {
 createProject(): void {
     this.projectService.createProject(this.project)
         .subscribe( data => {
-          alert('User created successfully.');
-        });
+          alert('Project created successfully.');
+        }
+        );
+        this.router.navigateByUrl('/projects');
 }}

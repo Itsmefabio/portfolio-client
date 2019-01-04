@@ -1,7 +1,6 @@
 export class Project {
 
-  projId: string;
- projectName: string;
-  githubLink: string;
- projDescription: string;
+ project_Name: string;
+  github_Link: string;
+ proj_Description: string;
 }

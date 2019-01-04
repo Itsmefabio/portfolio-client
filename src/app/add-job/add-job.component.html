@@ -1,0 +1,30 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add company</h2>
+<form>
+  
+   <div class="form-group">
+    <label for="companyName">company name:</label>
+    <input type="text" [(ngModel)]="job.companyName" placeholder="Company Name" name="projectName" class="form-control" id="companyName">
+  </div>
+
+  <div class="form-group">
+    <label for="position">position:</label>
+    <input type="text" [(ngModel)]="job.occupation" placeholder="position" name="plink" class="form-control" id="position">
+  </div>
+
+  <div class="form-group">
+    <label for="from">from:</label>
+   <input type="date" [(ngModel)]="job.from" placeholder="from" name="projDescription" class="form-control" id="from">
+  </div>
+  <div class="form-group">
+    <label for="to">to:</label>
+   <input type="date" [(ngModel)]="job.to" placeholder="to" name="projDescription" class="form-control" id="to">
+  </div>
+  <div class="form-group">
+    <label for="duties">duties:</label>
+   <input type="text" [(ngModel)]="job.duties" placeholder="duties" name="projDescription" class="form-control" id="duties">
+  </div>
+
+  <button class="btn btn-success" (click)="createJob()" >Create</button>
+</form>
+</div>

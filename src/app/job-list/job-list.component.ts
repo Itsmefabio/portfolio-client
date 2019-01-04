@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JobService } from '../shared/job/job.service';
+import { Job } from '../shared/job/job.model';
 
 
 
@@ -19,4 +20,9 @@ export class JobListComponent implements OnInit {
       this.jobs = data;
     });
   }
-}
+   deleteJob(jobs: Job): void {
+    this.jobService.deleteJob(jobs)
+      .subscribe( data => {
+        this.jobs = this.jobs.filter(j => j !== jobs);
+      });
+}}

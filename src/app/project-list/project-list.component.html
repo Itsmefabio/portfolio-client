@@ -4,7 +4,7 @@
 <table class="table uk-table-striped">
   <thead>
   <tr>
-    <th class="hidden">Id</th>
+   <th></th>
     <th>Poject Name</th>
     <th>Github Link</th>
     <th>project description</th>
@@ -16,11 +16,11 @@
    
     <td> {{project.projID}} </td>
     <td> {{project.projectName}} </td>
-    <td> {{project.githubLink}} </td>
+    <td> <a href="//{{project.githubLink}}">{{project.githubLink}}</a> </td>
      <td> {{project.projDescription}} </td>
     <td><button class="btn-danger uk-button-danger" (click)="deleteProject(project)"> Delete Project</button></td>
   </tr>
   </tbody>
 </table>
 </div>
-<a href="add-project">add project</a>
+<a href="add-project" >add project</a>
