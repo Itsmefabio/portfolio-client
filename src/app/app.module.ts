@@ -13,6 +13,7 @@ import { JobListComponent } from './job-list/job-list.component';
 import { ContactComponent } from './contact/contact.component';
 import { AddProjectComponent } from './add-project/add-project.component';
 import { AddJobComponent } from './add-job/add-job.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { AddJobComponent } from './add-job/add-job.component';
     ContactComponent,
     AddProjectComponent,
     AddJobComponent,
+    ContactMeComponent,
 
   ],
   imports: [
